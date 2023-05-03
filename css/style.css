@@ -1,0 +1,21 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generic */
+
+.big-contaner {
+    max-width: 1400px;  
+}
+
+.small-container, .big-container {
+    margin: 0 auto;
+}
+
+.small-container {
+    max-width: 1200px;
+}
