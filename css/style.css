@@ -29,6 +29,10 @@ body {
     display: flex;
 }
 
+.column-33 {
+    flex-basis: calc(100% / 3);
+}
+
 /* header */
 
 header {
@@ -52,5 +56,26 @@ header {
 
 .content-product {
     height: 600px;
+    border: 1px dashed black;
+}
+
+.purchase-offer {
+    height: 1000px;
+    background-color: lightblue;
+}
+
+.purchase-offer .column-33 {
+    border: 1px dashed black;
+    height: 400px;
+    margin-top: 300px;
+}
+
+.purchase-offer .flex {
+    gap: 30px;
+}
+
+.contact-office {
+    margin-top: 30px;
+    height: 200px;
     border: 1px dashed black;
 }
