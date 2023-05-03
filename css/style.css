@@ -33,6 +33,10 @@ body {
     flex-basis: calc(100% / 3);
 }
 
+.column-66 {
+    flex-basis: calc(100% / 3 * 2); 
+}
+
 /* header */
 
 header {
@@ -78,4 +82,33 @@ header {
     margin-top: 30px;
     height: 200px;
     border: 1px dashed black;
+}
+
+
+.partner {
+    margin: 40px 0;
+}
+
+.partner .column-33 {
+    height: 300px;
+    border: 1px dashed black;
+}
+
+.partner .column-66 {
+    height: 300px;
+    border: 1px dashed black;
+}
+
+.dropbox-business {
+    height: 1000px;
+    margin-top: 100px;
+}
+
+.dropbox-business .column-33 {
+    border: 1px dashed black;
+    height: 900px;
+}
+
+.dropbox-business .row {
+    flex-wrap: wrap;
 }
