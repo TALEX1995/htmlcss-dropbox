@@ -100,7 +100,6 @@ header {
 }
 
 .dropbox-business {
-    height: 1000px;
     margin-top: 100px;
 }
 
@@ -111,4 +110,27 @@ header {
 
 .dropbox-business .row {
     flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.user-number {
+    height: 200px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    background-color: blue;
+}
+
+
+.customers .column-33 {
+    height: 800px;
+    border: 1px dashed black;
+}
+
+.customers-logo-left, .customers-logo-right {
+    flex-wrap: wrap;
+}
+
+.customers-logo {
+    flex-basis: 50%;
+    border: 1px solid black;
 }
