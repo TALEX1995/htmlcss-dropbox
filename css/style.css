@@ -8,7 +8,12 @@
 
 /* Generic */
 
-.big-contaner {
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 100px;
+}
+
+.big-container {
     max-width: 1400px;  
 }
 
@@ -18,4 +23,34 @@
 
 .small-container {
     max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* header */
+
+header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: yellow;
+}
+
+
+/* Main */
+
+.product-presentacion {
+    background-color: #b4d0e7;
+    height: 800px;
+    padding-top: 100px;
+}
+
+.content-product {
+    height: 600px;
+    border: 1px dashed black;
 }
