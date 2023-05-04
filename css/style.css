@@ -11,6 +11,7 @@
 
 :root {
     --size-0-5rem: 8px;
+    --size-0-75rem: 12px;
     --size-1-rem: 16px;
     --size-1-5rem: 24px;
     --size-2-rem: 32px;
@@ -21,8 +22,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    padding-top: 100px;
+    padding-top: 80px;
     color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 /* Utilities */
@@ -51,8 +58,12 @@ body {
     flex-basis: calc(100% / 3 * 2); 
 }
 
+.column-50 {
+    flex-basis: 50%;
+}
+
 .blue-button {
-    padding: var(--size-0-5rem);
+    padding: var(--size-0-5rem) var(--size-1-rem);
     color: white;
     background-color: var(--button-blue-bkg);
 }
@@ -67,15 +78,38 @@ body {
 /* header */
 
 header {
-    height: 100px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: yellow;
 }
 
+
+header img {
+    padding-left: 20px;
+}
+
+header a {
+    padding: 0 30px;
+}
+
+.header-left {
+    justify-content: flex-start;
+}
+
+.header-right, .header-left {
+    align-items: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+header .blue-button {
+    margin-right: 30px;
+}
 
 /* Main */
 
