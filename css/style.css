@@ -32,6 +32,10 @@ a {
     cursor: pointer;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Utilities */
 
 .big-container {
@@ -101,6 +105,7 @@ header a {
 
 .header-right, .header-left {
     align-items: center;
+    width: 100%;
 }
 
 .header-right {
