@@ -39,7 +39,7 @@ ul {
 /* Utilities */
 
 .big-container {
-    max-width: 1400px;  
+    max-width: 1200px;  
 }
 
 .small-container, .big-container {
@@ -47,7 +47,7 @@ ul {
 }
 
 .small-container {
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .flex {
@@ -67,7 +67,7 @@ ul {
 }
 
 .blue-button {
-    padding: var(--size-0-5rem) var(--size-1-rem);
+    padding: var(--size-0-75rem) var(--size-1-rem);
     color: white;
     background-color: var(--button-blue-bkg);
 }
@@ -88,6 +88,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1;
+    background-color: white;
 }
 
 
@@ -118,16 +119,36 @@ header .blue-button {
 
 /* Main */
 
-.product-presentacion {
+h1 {
+    font-size: 80px;
+}
+
+.jumbotron span {
+    display: block;
+}
+
+.jumbotron {
     background-color: #b4d0e7;
-    height: 800px;
     padding-top: 100px;
 }
 
-.content-product {
-    height: 600px;
-    border: 1px dashed black;
+.fa-arrow-down {
+    font-size: 50px;
 }
+
+.jumbotron .column-33 * {
+    margin: 40px 0;
+}
+
+#jumbo {
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+}
+
+/* .content-product {
+    height: 600px;
+} */
 
 .purchase-offer {
     height: 1000px;
