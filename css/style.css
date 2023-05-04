@@ -52,9 +52,6 @@ h3 {
     padding: var(--size-1-5rem) 0;
 }
 
-h4 {
-    padding: var(--size-2-5rem) 0;
-}
 
 /* Utilities */
 
@@ -210,7 +207,6 @@ header .blue-button {
     margin: var(--size-2-rem) 0;
 }
 
-
 .what-you-get * {
     padding-bottom: var(--size-1-rem);
 }
@@ -240,31 +236,50 @@ header .blue-button {
     padding-bottom: var(--size-1-rem);
 }
 
-
-
 .what-you-get i {
     padding-right: 5px;
 }
-
 
 .purchase-offer .column-33 {
     border: 1px solid var(--border-color-gray);
     margin-top: var(--size-2-5rem);
 }
 
-
 .purchase-offers-choice {
     gap: 40px;
     line-height: 20px;
 }
 
-
+.flex-column h4 {
+    padding: var(--size-2-5rem) 0;
+}
 
 .contact-office {
-    margin-top: 30px;
-    height: 200px;
-    border: 1px dashed black;
+    margin-top: 40px;
+    border: 1px solid var(--border-color-gray);
 }
+
+.contacts {
+    position: relative;
+    padding-left: var(--size-1-5rem);
+}
+
+.contacts > a {
+    position: absolute;
+    top: var(--size-1-5rem);
+    right: 30px;
+}
+
+.contacts > p {
+    padding-top: 50px;
+    width: calc(100% / 3 * 2);
+    padding-bottom: 30px;
+}
+
+.contacts > .blue-button {
+    padding: var(--size-0-75rem) var(--size-2-5rem);
+}
+
 
 
 .partner {
