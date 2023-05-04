@@ -15,7 +15,9 @@
     --size-1-rem: 16px;
     --size-1-5rem: 24px;
     --size-2-rem: 32px;
+    --size-2-5rem: 40px;
     --button-blue-bkg: #0061ff;
+    --border-color-gray: #d0d0d3;
 }
 
 /* Generic */
@@ -34,6 +36,24 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    margin: var(--size-2-5rem) 0;
+    font-size: var(--size-2-5rem);
+}
+
+h3 {
+    font-size: 20px;
+    padding: var(--size-1-5rem) 0;
+}
+
+h4 {
+    padding: var(--size-2-5rem) 0;
 }
 
 /* Utilities */
@@ -77,6 +97,10 @@ ul {
     border: 1px solid black;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* header */
@@ -119,10 +143,6 @@ header .blue-button {
 
 /* Main */
 
-h1 {
-    font-size: 80px;
-}
-
 .jumbotron span {
     display: block;
 }
@@ -150,15 +170,81 @@ h1 {
     height: 600px;
 } */
 
-.purchase-offer {
-    height: 1000px;
-    background-color: lightblue;
+.purchase-offer > span:nth-child(2) {
+    border: 3px solid blue;
 }
 
+.purchase-offer  > span:nth-child(2), .purchase-offer span:nth-child(4){
+    border-radius: 50%;
+    width: var(--size-1-rem);
+    height: var(--size-1-rem);
+    display: inline-block;
+}
+
+.purchase-offer > span:nth-child(4) {
+    border: 2px solid grey;
+    margin-left: 30px;
+}
+
+.plan-business {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color-gray);
+}
+
+.purchase-offer .flex-column {
+    padding: 0 var(--size-1-5rem);
+}
+
+.plan-business-price {
+    font-weight: bold;
+    padding-bottom: var(--size-1-rem);
+}
+
+.plan-business-price + span {
+    color: grey;
+}
+
+.what-you-get {
+    margin: var(--size-2-rem) 0;
+}
+
+
+.what-you-get * {
+    padding-bottom: var(--size-1-rem);
+}
+
+
+.buy-now {
+    padding: var(--size-2-rem) 0;
+}
+
+.buy-now span {
+    border-bottom: 1px solid var(--border-color-gray);
+    padding-bottom: var(--size-2-rem);
+}
+
+.buy-now > a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.fa-check {
+    color: blue;
+    font-weight: bold;
+}
+
+.main-points-plan {
+    padding-bottom: var(--size-1-rem);
+}
+
+
+
+
+
 .purchase-offer .column-33 {
-    border: 1px dashed black;
-    height: 400px;
-    margin-top: 300px;
+    border: 1px solid var(--border-color-gray);
+    margin-top: var(--size-2-5rem);
 }
 
 .purchase-offer .flex {
