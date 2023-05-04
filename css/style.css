@@ -90,6 +90,7 @@ h4 {
     padding: var(--size-0-75rem) var(--size-1-rem);
     color: white;
     background-color: var(--button-blue-bkg);
+    text-align: center;
 }
 
 .white-button {
@@ -239,10 +240,11 @@ header .blue-button {
     padding-bottom: var(--size-1-rem);
 }
 
-.fa-user, .fa-folder, .fa-share-nodes {
+
+
+.what-you-get i {
     padding-right: 5px;
 }
-
 
 
 .purchase-offer .column-33 {
@@ -251,18 +253,12 @@ header .blue-button {
 }
 
 
-/* .what-you-get > div {
-    display: flex;
-} */
-
-
-
-
-
-
 .purchase-offers-choice {
-    gap: 30px;
+    gap: 40px;
+    line-height: 20px;
 }
+
+
 
 .contact-office {
     margin-top: 30px;
