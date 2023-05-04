@@ -174,7 +174,7 @@ header .blue-button {
     border: 3px solid blue;
 }
 
-.purchase-offer  > span:nth-child(2), .purchase-offer span:nth-child(4){
+.purchase-offer  > span:nth-child(2), .purchase-offer > span:nth-child(4){
     border-radius: 50%;
     width: var(--size-1-rem);
     height: var(--size-1-rem);
@@ -232,13 +232,16 @@ header .blue-button {
 .fa-check {
     color: blue;
     font-weight: bold;
+    padding-right: 5px;
 }
 
 .main-points-plan {
     padding-bottom: var(--size-1-rem);
 }
 
-
+.fa-user, .fa-folder, .fa-share-nodes {
+    padding-right: 5px;
+}
 
 
 
@@ -247,7 +250,17 @@ header .blue-button {
     margin-top: var(--size-2-5rem);
 }
 
-.purchase-offer .flex {
+
+/* .what-you-get > div {
+    display: flex;
+} */
+
+
+
+
+
+
+.purchase-offers-choice {
     gap: 30px;
 }
 
