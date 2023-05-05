@@ -112,6 +112,7 @@ img {
 .white-button {
     padding: var(--size-0-5rem) var(--size-0-75rem);
     border: 1px solid black;
+    background-color: white;
 }
 
 .flex-column {
@@ -122,6 +123,10 @@ img {
 
 .btn {
     display: inline-block;
+}
+
+.filter-white {
+    filter: invert(96%) sepia(25%) saturate(2%) hue-rotate(164deg) brightness(112%) contrast(100%);
 }
 
 
@@ -381,10 +386,6 @@ header .blue-button {
     background-color: #0093ce;
 }
 
-.bkg-free-trial {
-    background-color: yellow;
-}
-
 #topps {
     background-color: #ff1c1c;
 }
@@ -424,18 +425,41 @@ header .blue-button {
     background-color: #ffd830;
 }
 
+
 .customers-logo:hover {
     border: 15px solid rgba(255, 255, 255, 0.7);
 }
 
 
 
+/* Free Trial */
 
+.bkg-free-trial {
+    background-color: #b4d0e7;
+}
 
 .free-trial {
-    height: 200px;
-    padding: 50px;
+    padding: 50px 0;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
+.free-trial .column-40 {
+    justify-content: flex-end;
+}
+
+.free-trial .btn {
+    border: none;
+    width: 70%;
+    text-align: center;
+}
+
+.free-trial h2 {
+    color: #61082b;
+}
+
+
+
 
 .column-flex {
     flex-direction: column;
