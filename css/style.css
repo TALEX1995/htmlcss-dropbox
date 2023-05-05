@@ -16,6 +16,7 @@
     --size-1-5rem: 24px;
     --size-2-rem: 32px;
     --size-2-5rem: 40px;
+    --size-3-rem: 48px;
     --button-blue-bkg: #0061ff;
     --border-color-gray: #d0d0d3;
 }
@@ -44,7 +45,7 @@ h1 {
 }
 
 h2 {
-    margin: var(--size-2-5rem) 0;
+    margin: var(--size-3-rem) 0;
     font-size: var(--size-2-5rem);
 }
 
@@ -53,8 +54,14 @@ h3 {
     padding: var(--size-1-5rem) 0;
 }
 
-.btn {
-    display: inline-block;
+
+p {
+    line-height: var(--size-1-5rem);
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Utilities */
@@ -112,9 +119,9 @@ h3 {
     flex-direction: column;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+
+.btn {
+    display: inline-block;
 }
 
 
@@ -168,7 +175,7 @@ header .blue-button {
 
 .jumbotron .big-container {
     position: relative;
-    top: 80px;
+    top: 70px;
     margin-bottom: 150px;
 }
 
@@ -176,9 +183,6 @@ header .blue-button {
     font-size: 50px;
 }
 
-.jumbotron p {
-    line-height: 20px;
-}
 
 .jumbotron .column-33 * {
     margin: 40px 0;
@@ -273,7 +277,6 @@ header .blue-button {
 
 .purchase-offers-choice {
     gap: 40px;
-    line-height: 20px;
 }
 
 .flex-column h4 {
@@ -315,30 +318,26 @@ header .blue-button {
 }
 
 .partner p {
-    line-height: var(--size-1-5rem);
     margin-bottom: var(--size-2-5rem);
 }
 
 
-
-
-
-
-
+.row .dropbox-business-card {
+    width: calc(100% / 3 - calc(50px / 3));
+}
 
 .dropbox-business {
     margin-top: 100px;
 }
 
-.dropbox-business .column-33 {
-    border: 1px dashed black;
-    height: 900px;
-}
-
 .dropbox-business .row {
     flex-wrap: wrap;
     align-content: flex-start;
+    gap: 25px;
 }
+
+
+
 
 .user-number {
     height: 200px;
