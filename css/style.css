@@ -170,6 +170,10 @@ header .blue-button {
 
 /* Main */
 
+/* Jumbotron */
+
+
+
 .jumbotron span {
     display: block;
 }
@@ -198,6 +202,10 @@ header .blue-button {
     margin-top: 40px;
     height: auto;
 }
+
+
+/* Purchase-offer */
+
 
 .purchase-offer > span:nth-child(2) {
     border: 3px solid blue;
@@ -292,6 +300,8 @@ header .blue-button {
     padding: var(--size-2-5rem) 0;
 }
 
+/* Our Contacts */
+
 .contact-office {
     margin-top: 40px;
     border: 1px solid var(--border-color-gray);
@@ -318,6 +328,9 @@ header .blue-button {
     padding: var(--size-0-75rem) var(--size-2-5rem);
 }
 
+
+/* Partners */
+
 .partner {
     margin: 150px 0;
 }
@@ -330,6 +343,7 @@ header .blue-button {
     margin-bottom: var(--size-2-5rem);
 }
 
+/* Dropbox-business */
 
 .row .dropbox-business-card {
     width: calc(100% / 3 - calc(50px / 3));
@@ -345,12 +359,15 @@ header .blue-button {
     gap: 25px;
 }
 
+/* User Number */
 
 .user-number {
     margin-top: 150px;
     margin-bottom: 100px;
     width: 60%;
 }
+
+/* Customers Logo */
 
 .customers-logo-left, .customers-logo-middle, .customers-logo-right {
     flex-basis: calc(100vw / 3);
@@ -429,7 +446,6 @@ header .blue-button {
 .customers-logo:hover {
     border: 15px solid rgba(255, 255, 255, 0.7);
 }
-
 
 
 /* Free Trial */
