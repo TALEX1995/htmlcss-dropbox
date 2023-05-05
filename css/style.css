@@ -247,7 +247,7 @@ header .blue-button {
     padding-bottom: var(--size-2-rem);
 }
 
-.buy-now > a {
+.buy-now > a, .user-number > a  {
     text-decoration: underline;
     color: blue;
 }
@@ -342,35 +342,95 @@ header .blue-button {
 
 
 .user-number {
-    height: 200px;
-    margin-top: 100px;
-    margin-bottom: 80px;
-    border: 1px dashed black;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 60%;
 }
 
-
-
-
-
-
-
-.customers .column-33 {
-    height: 800px;
-    border: 1px dashed black;
+.customers-logo-left, .customers-logo-middle, .customers-logo-right {
+    flex-basis: calc(100vw / 3);
+    height: calc(100vw / 3);
 }
 
 .customers-logo-left, .customers-logo-right {
     flex-wrap: wrap;
+    align-content: flex-start; 
 }
 
 .customers-logo {
     flex-basis: 50%;
-    border: 1px solid black;
+    height: 50%;
+    border: 15px solid transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-logo-left img, .customers-logo-right img {
+    max-width: 60%;
+}
+
+#designit {
+    background-color: #a2d39b;
+}
+
+#arizona-university {
+    background-color: #61082b;
+}
+
+#florida-university {
+    background-color: #0093ce;
 }
 
 .bkg-free-trial {
     background-color: yellow;
 }
+
+#topps {
+    background-color: #ff1c1c;
+}
+
+.customers-logo-middle {
+    padding: var(--size-3-rem);
+    background-color: #f5f5f5;
+}
+
+.customers-logo-middle img {
+    max-width: 50%;
+}
+
+.gray-border-bottom {
+    border-bottom: 1px solid var(--border-color-gray);
+    width: 20%;
+    margin: var(--size-2-5rem) 0;
+}
+
+.customers-logo-middle p + p {
+    margin-top: var(--size-3-rem);
+}
+
+#world-bicycle {
+    background-color: #d5001f;
+}
+
+#hearst {
+    background-color: #b4d0e7;
+}
+
+#lonely-planet {
+    background-color: #0d2481;
+}
+
+#clear-channel {
+    background-color: #ffd830;
+}
+
+.customers-logo:hover {
+    border: 15px solid rgba(255, 255, 255, 0.7);
+}
+
+
+
+
 
 .free-trial {
     height: 200px;
