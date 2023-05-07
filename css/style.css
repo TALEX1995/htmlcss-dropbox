@@ -475,16 +475,32 @@ header .blue-button {
 }
 
 
+/* Frequent questions */
 
-
-.column-flex {
-    flex-direction: column;
-    height: 600px;
+.questions h2 {
+    border-bottom: 1px solid #999999;
+    margin-bottom: 0;
+    padding-bottom: 50px;
 }
 
-.column-flex * {
-    border: 1px dashed black;
-    height: calc(100% / 3);
+
+.questions > h2, .questions-flex > div {
+    width: 100%;
+}
+
+.questions-flex p {
+    font-weight: bold;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.questions-flex > div {
+    justify-content: space-between;
+    border-bottom: 1px solid #999999;
+}
+
+.questions-flex i {
+    padding-right: 40px;
 }
 
 .questions {
