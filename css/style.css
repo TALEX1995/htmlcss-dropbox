@@ -488,15 +488,34 @@ header .blue-button {
     width: 100%;
 }
 
-.questions-flex p {
+.questions-flex p:first-child {
     font-weight: bold;
     line-height: 100px;
     vertical-align: middle;
 }
 
 .questions-flex > div {
-    justify-content: space-between;
     border-bottom: 1px solid #999999;
+}
+
+.questions-flex .flex {
+    justify-content: space-between;
+}
+
+.questions-hover {
+    display: none;
+}
+
+.questions-flex > div:hover .questions-hover, .questions-flex > div:hover .fa-chevron-up {
+    display: block;
+}
+
+.questions-flex > div:hover .fa-chevron-down {
+    display: none;
+}
+
+.questions .fa-chevron-up {
+    display: none;
 }
 
 .questions-flex i {
