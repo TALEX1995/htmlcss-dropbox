@@ -103,16 +103,18 @@ img {
 }
 
 .blue-button {
-    padding: var(--size-0-75rem) var(--size-1-rem);
     color: white;
     background-color: var(--button-blue-bkg);
     text-align: center;
 }
 
 .white-button {
-    padding: var(--size-0-5rem) var(--size-0-75rem);
     border: 1px solid black;
     background-color: white;
+}
+
+.blue-button, .white-button {
+    padding: var(--size-0-5rem) var(--size-1-rem);
 }
 
 .flex-column {
@@ -170,9 +172,8 @@ header .blue-button {
 
 /* Main */
 
+
 /* Jumbotron */
-
-
 
 .jumbotron span {
     display: block;
@@ -250,6 +251,9 @@ header .blue-button {
     padding-bottom: var(--size-1-rem);
 }
 
+.what-you-get i {
+    padding-right: 5px;
+}
 
 .buy-now {
     padding: var(--size-2-rem) 0;
@@ -275,9 +279,6 @@ header .blue-button {
     padding-bottom: var(--size-1-rem);
 }
 
-.what-you-get i {
-    padding-right: 5px;
-}
 
 .flex-column .btn {
     width: 100%;
@@ -315,7 +316,7 @@ header .blue-button {
 .contacts > a {
     position: absolute;
     top: var(--size-1-5rem);
-    right: 30px;
+    right: var(--size-2-rem);
 }
 
 .contacts > p {
@@ -456,7 +457,6 @@ header .blue-button {
 
 .free-trial {
     padding: 50px 0;
-    justify-content: space-between;
     align-items: baseline;
 }
 
@@ -504,6 +504,7 @@ header .blue-button {
 
 .questions-hover {
     display: none;
+    padding-bottom: var(--size-1-rem);
 }
 
 .questions-flex > div:hover .questions-hover, .questions-flex > div:hover .fa-chevron-up {
@@ -564,4 +565,25 @@ footer h5, footer a {
     align-items: center;
     width: 10%;
     justify-content: flex-start;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Neon Effect */
+
+header a:hover {
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff, 0 0 15px yellow,
+    0 0 20px yellow, 0 0 25px yellow,
+    0 0 30px yellow, 0 0 35px yellow,
+    0 0 40px yellow, 0 0 45px yellow,
+    0 0 50px yellow;
+    border-bottom: 1px solid black;
+}
+
+header a {
+    padding-bottom: 28px;
 }
