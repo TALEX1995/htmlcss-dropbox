@@ -513,11 +513,36 @@ header .blue-button {
 footer {
     padding-top: 50px;
     background-color: black;
-    padding-bottom: 30px;
+    padding-bottom: var(--size-2-rem); 
+}
+
+footer h5 {
+    font-size: var(--size-1-5rem);
+    padding-bottom: var(--size-2-rem);
+}
+
+footer li {
+    padding-bottom: var(--size-1-rem);
+}
+
+footer h5, footer a {
+    color: white;
 }
 
 .column-20 {
     width: calc(100% / 5);
-    border: 1px dashed white;
-    height: 500px;
+    padding-bottom: 100px;
+}
+
+.language * {
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 5px;
+}
+
+.language {
+    padding-top: var(--size-3-rem);
+    border-top: 1px solid white;
+    align-items: center;
+    width: 10%;
+    justify-content: flex-start;
 }
